@@ -1,12 +1,18 @@
-.bnt-primary {
-    font-size: 16px;
-    font-weight: 500px;
-    padding: 12px 20px;
-    
-    color: #dbffff;
-    background: rgb(82,34,208);
-    background: linear-gradient(90deg, rgba(82,34,208,1) 35%, rgba(255,97,150,1) 100%);
-
-    border: none;
-    border-radius: 8px;
-}
+.btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(90deg, #8455ff, #ff7a7a);
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background: linear-gradient(90deg, #ff7a7a, #8455ff);
+  }
+  

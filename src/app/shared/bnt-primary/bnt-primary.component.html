@@ -1,3 +1,8 @@
-<button class= "bnt-primary">
-    {{text}}
-</button>
+<a *ngIf="download" [href]="filePath" download="{{fileName}}" class="btn btn-primary">
+    {{ text }}
+  </a>
+  
+  <button *ngIf="!download" class="btn btn-primary">
+    {{ text }}
+  </button>
+  
