@@ -16,7 +16,7 @@ section {
         text-transform: uppercase;
         font-weight: 600;
         font-size: 16px;
-        color: #151717;
+        color: var(--text-color);
     }
 
     h1 {
@@ -27,7 +27,16 @@ section {
         font-size: 40px;
         margin: 0;
       }
-    }   
+    }
+    
+    p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.6;
+        color: var(--text-color);
+    }
 }
 
 @media (min-width: 1080px) {
