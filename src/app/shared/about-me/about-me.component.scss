@@ -1,0 +1,66 @@
+section {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+
+    .about-me {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Ensures everything is left-aligned */
+        justify-content: center;
+        gap: 12px;
+        position: relative; /* Add relative positioning here */
+        
+    }
+
+    h2 {
+        font-family: 'Montserrat', sans-serif;
+        text-align: left;
+        font-weight: 500;
+        font-size: 36px;
+        color: var(--text-color);
+        margin-bottom: 10px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: -2px; /* Adjust as needed to place the line next to the text */
+            
+            height: 50%;
+            bottom: 15px;
+            width: 5px;
+            background-color: #0066cc; /* Line color */
+            border-radius: 5px;
+        }
+    }
+
+    p {
+        font-family: 'Montserrat', sans-serif;
+        text-align: left;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.6;
+        color: var(--text-color);
+        
+        margin-left: 10px;
+    }
+}
+
+@media (min-width: 1080px) {
+    section {
+        flex-direction: row;
+        justify-content: space-between;
+
+        .about-me {
+            align-items: flex-start;
+            max-width: 100%;
+        }
+
+        h1 {
+            font-size: 56px;
+        }
+    }
+}
+
