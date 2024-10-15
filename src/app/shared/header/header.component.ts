@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  isModalOpen = false;
 
+  openContactModal() {
+    this.isModalOpen = true;
+  }
+
+  closeContactModal() {
+    this.isModalOpen = false;
+  }
 }
+
