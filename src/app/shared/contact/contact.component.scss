@@ -10,6 +10,7 @@ h1 {
   margin-bottom: 40px;
   margin-top: 50px;
   text-align: center;
+  letter-spacing: 6px;
 }
 
 h2 {
@@ -18,7 +19,7 @@ h2 {
   color: var(--text-color);
   margin-bottom: 40px;
   margin-top: 50px;
-  text-align: left;
+  text-align: center;
   font-family: 'Montserrat', sans-serif;
   line-height: 1.2;
 }
@@ -31,11 +32,12 @@ h3 {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.2;
   margin-top: 20px;
+  letter-spacing: 8px;
 }
 
 .social-media-icons {
   display: flex;
-  justify-content: left; /* Centers the icons horizontally */
+  justify-content: center; /* Centers the icons horizontally */
   gap: 40px; /* Adjusts the space between each icon */
   
 }
@@ -48,7 +50,8 @@ h3 {
 }
 
 svg {
-  width: 50px; /* Adjust the size of the icon */
-  height: 40px;
+  width: 98px; /* Adjust the size of the icon */
+  height: 95px;
   fill: var(--text-color);
+  cursor: pointer;
 }

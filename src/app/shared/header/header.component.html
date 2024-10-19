@@ -1,11 +1,19 @@
 <header>
-  <span>Home</span>
+  <span (click)="scrollToSection('home')">Home</span> <!-- Click event for Home -->
   <div class="menu">
-    <span>Projects</span>
-    <bnt-primary text="contact me" (click)="openContactModal()">
-    </bnt-primary>
+    <span (click)="scrollToSection('projects')">Projects</span> <!-- Click event for Projects -->
+    <bnt-primary text="contact me" (click)="openContactModal()"></bnt-primary>
   </div>
 </header>
+
+<!-- Somewhere in the HTML, you will have the corresponding sections -->
+<section id="home">
+  <!-- Home content -->
+</section>
+
+<section id="projects">
+  <!-- Projects content -->
+</section>
 
 
 <!-- Contact Modal -->

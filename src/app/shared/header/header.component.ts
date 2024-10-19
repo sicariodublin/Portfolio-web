@@ -15,5 +15,15 @@ export class HeaderComponent {
   closeContactModal() {
     this.isModalOpen = false;
   }
+
+  scrollToSection(section: string) {
+    const element = document.getElementById(section);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }
+
+
+
 

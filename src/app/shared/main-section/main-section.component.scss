@@ -13,18 +13,19 @@ section {
         gap: 12px;
 
     span {
+        font-family: 'Montserrat', sans-serif;
         text-transform: uppercase;
-        font-weight: 600;
-        font-size: 16px;
+        font-weight: 500;
+        font-size: 24px;
         color: var(--text-color);
     }
 
     h1 {
-        background: linear-gradient(90deg, rgb(82, 34, 208) 35%, rgb(255, 97, 150) 100%);
+        background: linear-gradient(90deg, rgb(82, 34, 208) 25%, rgb(255, 97, 150) 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         display: inline-block;
-        font-size: 40px;
+        font-size: 56px;
         margin: 0;
       }
     }
@@ -32,10 +33,11 @@ section {
     p {
         font-family: 'Montserrat', sans-serif;
         font-size: 18px;
-        font-size: 16px;
+        font-size: 24px;
         font-weight: 500;
         line-height: 1.6;
         color: var(--text-color);
+        text-align: justify;
     }
 }
 
