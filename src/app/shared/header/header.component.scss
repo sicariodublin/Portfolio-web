@@ -2,7 +2,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 24px;
+    padding-top: 24px;  
 }
 
 span {
@@ -15,7 +15,7 @@ div {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 32px;
+    gap: 12px;
 }
 
 a {
@@ -45,7 +45,8 @@ a {
     margin: 10% auto; /* Center the modal */
     padding: 20px;
     border: 1px solid var(--text-color);
-    width: 78%;
+    width: 95%;
+    max-width: 1100px;
     border-radius: 8px;
     display: flex;
     flex-direction: column; /* Mobile-friendly default */
@@ -54,7 +55,7 @@ a {
   }
   
   h2 {
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 20px;
     color: var(--text-color); /* Ensure dark mode compatibility */
   }
@@ -63,6 +64,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     gap: 20px; /* Adds spacing between items */
+    width: 100%;
   }
   
   .contact-item {
@@ -71,8 +73,9 @@ a {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    font-size: 24px;
-    width: 420px;
+    font-size: 15px;
+    width: 400px;
+    min-width: 150px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -81,8 +84,8 @@ a {
   .close {
     position: absolute;
     right: 90px;
-    top: 180px;
-    font-size: 80px;
+    top: 140px;
+    font-size: 60px;
     cursor: pointer;
   }
   
@@ -90,7 +93,7 @@ a {
     color: var(--text-color); /* Use secondary color for links */
     text-decoration: none;
     transition: color 0.3s;
-    font-size: 24px;
+    font-size: 15px;
     margin-bottom:30px;
     margin-top: 30px;
     white-space: nowrap; /* Prevent text wrapping */
@@ -107,4 +110,26 @@ a {
       color: var(--primary-color); /* Change color on hover */
     }
   }
+
+  @media only screen and (max-width: 768px) {
+    .modal-content {
+      width: 95%;
+      padding: 15px;
+    }
   
+    .close {
+      right: 10px;
+      top: 10px;
+      font-size: 24px;
+    }
+  
+    .contact-info {
+      flex-direction: column; /* Stack items vertically on small screens */
+      gap: 10px;
+    }
+  
+    .contact-item {
+      width: 100%; /* Full width for each item */
+      text-align: left;
+    }
+  }

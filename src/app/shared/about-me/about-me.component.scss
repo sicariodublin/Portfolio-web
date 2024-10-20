@@ -26,15 +26,16 @@ section {
         font-weight: 500;
         font-size: 36px;
         color: var(--text-color);
-        margin-bottom: 10px;
+        margin-bottom: -20px;
+        margin-top: 50px;
         
 
         &::before {
             content: '';
             position: absolute;
             left: -5px; /* Adjust as needed to place the line next to the text */
-            top: 115px; /* Aligns the top of the line with the top of the container */
-            height: 75%;
+            top: 105px; /* Aligns the top of the line with the top of the container */
+            height: 78%;
             width: 8px;
             background-color: #0066cc; /* Line color */
             border-radius: 0;
@@ -45,7 +46,7 @@ section {
         font-family: 'Montserrat', sans-serif;
         text-align: left;
         text-align: justify;
-        font-size: 24px;
+        font-size: 21px;
         font-weight: 500;
         line-height: 1.6;
         color: var(--text-color);
