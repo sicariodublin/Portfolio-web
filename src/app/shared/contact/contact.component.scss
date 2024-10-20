@@ -1,0 +1,57 @@
+.social-media {
+  padding: 60px 0;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 26px;  
+  color: var(--text-color);
+  margin-bottom: 40px;
+  margin-top: 50px;
+  text-align: center;
+  letter-spacing: 6px;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 36px;
+  color: var(--text-color);
+  margin-bottom: 40px;
+  margin-top: 50px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.2;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 24px;
+  color: var(--text-color);
+  margin: 0; /* Remove margins for better alignment */
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.2;
+  margin-top: 20px;
+  letter-spacing: 8px;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: center; /* Centers the icons horizontally */
+  gap: 40px; /* Adjusts the space between each icon */
+  
+}
+
+.icon-item {
+  display: flex;
+  flex-direction: column; /* Stack the icon and text vertically */
+  align-items: center; /* Centers the icon and text horizontally */
+ 
+}
+
+svg {
+  width: 98px; /* Adjust the size of the icon */
+  height: 95px;
+  fill: var(--text-color);
+  cursor: pointer;
+}

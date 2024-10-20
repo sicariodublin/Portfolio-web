@@ -1,0 +1,13 @@
+.wrapper {
+    padding: 0 15px;	
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+  
+@media (min-width: 1080px) {
+    .wrapper {
+        padding: 0 62px;
+    }
+}

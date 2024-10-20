@@ -1,0 +1,19 @@
+<section class="projects">
+  <div class="container">
+    <h2>Projects</h2>
+    <div class="project-list">
+      <div class="project" *ngFor="let project of projects | slice:0:(showAllProjects ? projects.length : 4)">
+        <h3>{{ project.title }}</h3>
+        <div class="technologies">
+          <span *ngFor="let tech of project.technologies" class="tech">{{ tech }}</span>
+        </div>
+        <p>{{ project.description }}</p>
+        <!--<a [href]="project.link" target="_blank">View Project</a>-->
+      </div>
+    </div>
+  </div>
+   <!-- Toggle button to show all or fewer projects -->
+   <bnt-primary (click)="toggleProjects()" [text]="showAllProjects ? 'Show Less' : 'See All Projects'"></bnt-primary>
+</section>
+
+  

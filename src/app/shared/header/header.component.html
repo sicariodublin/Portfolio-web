@@ -1,0 +1,44 @@
+<header>
+  <span (click)="scrollToSection('home')">Home</span> <!-- Click event for Home -->
+  <div class="menu">
+    <span (click)="scrollToSection('projects')">Projects</span> <!-- Click event for Projects -->
+    <bnt-primary text="contact me" (click)="openContactModal()"></bnt-primary>
+  </div>
+</header>
+
+<!-- Somewhere in the HTML, you will have the corresponding sections -->
+<section id="home">
+  <!-- Home content -->
+</section>
+
+<section id="projects">
+  <!-- Projects content -->
+</section>
+
+
+<!-- Contact Modal -->
+<div id="contactModal" class="modal" [ngClass]="{'show': isModalOpen}">
+    <div class="modal-content">
+      <span class="close" (click)="closeContactModal()">&times;</span>
+      <h2>Contact Me</h2>
+      <div class="contact-info">
+        <div class="contact-item">
+          <strong>Email:</strong>
+          <p>fabioast47&#64;hotmail.com</p>
+        </div>
+        <div class="contact-item">
+          <strong>Email:</strong>
+          <p>fabiosteyer&#64;gmail.com</p>
+        </div>
+        <div class="contact-item">
+          <strong>Phone:</strong>
+          <p>+353 87 066 4839</p>
+        </div>
+        <div class="contact-item">
+          <strong>LinkedIn:</strong>
+          <a href="https://www.linkedin.com/in/fabio-alexandre-steyer/" target="_blank">linkedin.com/in/fabio-alexandre-steyer/</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
