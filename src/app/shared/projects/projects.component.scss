@@ -13,7 +13,8 @@
     max-width: 2500px;
     margin: 0 auto;
     text-align: left;
-    padding-left: 50px;
+    padding-left: 65px;
+    padding-right: 10px;
   }
 
   h2 {
@@ -27,8 +28,8 @@
   }
 
   .project-list {
-    column-gap: 80px;  /* gap between columns */
-    row-gap: 80px;   /*gap between rows */
+    column-gap: 60px;  /* gap between columns */
+    row-gap: 60px;   /*gap between rows */
     display: flex;
     flex-wrap: wrap;
     
