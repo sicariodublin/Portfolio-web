@@ -46,7 +46,7 @@ a {
     padding: 20px;
     border: 1px solid var(--text-color);
     width: 95%;
-    max-width: 1200px;
+    max-width: 1150px;
     border-radius: 8px;
     display: flex;
     flex-direction: column; /* Mobile-friendly default */
@@ -83,8 +83,8 @@ a {
 
   .close {
     position: absolute;
-    right: 90px;
-    top: 140px;
+    right: 250px;
+    top: 110px;
     font-size: 60px;
     cursor: pointer;
   }
@@ -94,8 +94,8 @@ a {
     text-decoration: none;
     transition: color 0.3s;
     font-size: 15px;
-    margin-bottom:30px;
-    margin-top: 30px;
+    margin-bottom:16px;
+    margin-top: 20px;
     white-space: nowrap; /* Prevent text wrapping */
     overflow: hidden; /* Ensure it doesn’t overflow the container */
     text-overflow: ellipsis; /* Optional: Adds ellipsis (...) if the text is too long */
@@ -114,13 +114,38 @@ a {
   @media only screen and (max-width: 768px) {
     .modal-content {
       width: 95%;
+      max-width: fit-content;
       padding: 15px;
     }
   
     .close {
       right: 10px;
       top: 10px;
-      font-size: 24px;
+      font-size: 44px;
+    }
+  
+    .contact-info {
+      flex-direction: column; /* Stack items vertically on small screens */
+      gap: 10px;
+    }
+  
+    .contact-item {
+      width: 100%; /* Full width for each item */
+      text-align: left;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .modal-content {
+      width: 95%;
+      max-width: fit-content;
+      padding: 15px;
+    }
+  
+    .close {
+      right: 10px;
+      top: 10px;
+      font-size: 44px;
     }
   
     .contact-info {
