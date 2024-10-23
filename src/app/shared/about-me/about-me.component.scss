@@ -1,0 +1,96 @@
+section {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+
+    .about-me {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Ensures everything is left-aligned */
+        justify-content: center;
+        gap: 12px;
+        position: relative; /* Add relative positioning here */
+        
+    }
+
+    .about-me p {
+        margin-bottom: -45px; /* Adjust the value as needed */
+      }
+      
+
+    h2 {
+        font-family: 'Montserrat', sans-serif;
+        text-align: left;
+        font-weight: 500;
+        font-size: 36px;
+        color: var(--text-color);
+        margin-bottom: -20px;
+        margin-top: 50px;
+        
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: -5px; /* Adjust as needed to place the line next to the text */
+            top: 105px; /* Aligns the top of the line with the top of the container */
+            height: 78%;
+            width: 8px;
+            background-color: #0066cc; /* Line color */
+            border-radius: 0;
+        }
+    }
+
+    p {
+        font-family: 'Montserrat', sans-serif;
+        text-align: left;
+        text-align: justify;
+        font-size: 21px;
+        font-weight: 500;
+        line-height: 1.6;
+        color: var(--text-color);
+        width: 90%;
+        margin-left: 10px;
+    }
+}
+
+@media (min-width: 1080px) {
+    section {
+        flex-direction: row;
+        justify-content: space-between;
+
+        .about-me {
+            align-items: flex-start;
+            max-width: 100%;
+        }
+
+        h1 {
+            font-size: 56px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .about-me {
+      padding: 0 15px; /* Add padding to prevent text from touching the edges */
+      text-align: left; /* Align text to the left */
+    }
+  
+    h2 {
+      font-size: 28px; /* Reduce heading size for smaller screens */
+      margin-bottom: 15px;
+  
+      &::before {
+        left: -5px; /* Adjust the distance from the text */
+        width: 3px; /* Narrow the vertical line on small screens */
+        height: 100%; /* Keep the line responsive to text height */
+      }
+    }
+  
+    p {
+      font-size: 16px; /* Reduce paragraph font size for smaller screens */
+    }
+  }
+  
+

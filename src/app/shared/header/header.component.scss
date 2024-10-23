@@ -1,0 +1,160 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;  
+}
+
+span {
+  font-size: 25px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  }
+  
+  .modal.show {
+    display: block; /* Show the modal when the class 'show' is added */
+  }
+  
+  .modal-content {
+    background-color: var(--background-color); /* Use variable for background */
+    color: var(--text-color); /* Use variable for text */
+    margin: 10% auto; /* Center the modal */
+    padding: 20px;
+    border: 1px solid var(--text-color);
+    width: 95%;
+    max-width: 1150px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column; /* Mobile-friendly default */
+    align-items: flex-start;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for dark mode */
+  }
+  
+  h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: var(--text-color); /* Ensure dark mode compatibility */
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adds spacing between items */
+    width: 100%;
+  }
+  
+  .contact-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 15px;
+    width: 400px;
+    min-width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .close {
+    position: absolute;
+    right: 250px;
+    top: 110px;
+    font-size: 60px;
+    cursor: pointer;
+  }
+  
+  a {
+    color: var(--text-color); /* Use secondary color for links */
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 15px;
+    margin-bottom:16px;
+    margin-top: 20px;
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Ensure it doesn’t overflow the container */
+    text-overflow: ellipsis; /* Optional: Adds ellipsis (...) if the text is too long */
+    
+
+    p {
+        margin-top: 2px;
+      }
+  
+    &:hover {
+      text-decoration: underline;
+      color: var(--primary-color); /* Change color on hover */
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .modal-content {
+      width: 95%;
+      max-width: fit-content;
+      padding: 15px;
+    }
+  
+    .close {
+      right: 10px;
+      top: 10px;
+      font-size: 44px;
+    }
+  
+    .contact-info {
+      flex-direction: column; /* Stack items vertically on small screens */
+      gap: 10px;
+    }
+  
+    .contact-item {
+      width: 100%; /* Full width for each item */
+      text-align: left;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .modal-content {
+      width: 95%;
+      max-width: fit-content;
+      padding: 15px;
+    }
+  
+    .close {
+      right: 10px;
+      top: 10px;
+      font-size: 44px;
+    }
+  
+    .contact-info {
+      flex-direction: column; /* Stack items vertically on small screens */
+      gap: 10px;
+    }
+  
+    .contact-item {
+      width: 100%; /* Full width for each item */
+      text-align: left;
+    }
+  }
