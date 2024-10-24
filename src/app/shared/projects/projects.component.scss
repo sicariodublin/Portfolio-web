@@ -1,6 +1,6 @@
 /* General container for all sections */
 .container {
-  max-width: 1200px; /* Ensure all sections have the same max width */
+  max-width: 3200px; /* Ensure all sections have the same max width */
   margin: 0 auto;  /*Center container */
   padding: 0 15px; /* Optional padding to add some space around edges */
 }
@@ -10,11 +10,10 @@
   padding: 50px 0;
 
   .container {
-    max-width: 2500px;
+    max-width: 3200px;
     margin: 0 auto;
     text-align: left;
-    padding-left: 65px;
-    padding-right: 10px;
+    
   }
 
   h2 {
@@ -38,7 +37,7 @@
   .project {
     background-color: var(--card-background); /* Use card background color variable */
     padding: 20px;
-    width: 45%;
+    width: 44%;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     text-align: left;
