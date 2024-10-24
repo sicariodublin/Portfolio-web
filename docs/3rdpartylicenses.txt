@@ -10,6 +10,8 @@ MIT
 @angular/router
 MIT
 
+portfolio-web
+
 rxjs
 Apache-2.0
                                Apache License
