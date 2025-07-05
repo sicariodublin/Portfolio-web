@@ -9,6 +9,12 @@
     showAllProjects = false; // Toggle to show or hide all projects
     projects = [
       {
+        title: 'Expence Tracker',
+        description: 'This is an expense tracker website that allows users to track their expenses and categorize them. Users can add expenses manually or import them from a CSV file. The website displays the expenses in a table format, with options to filter and sort the data. The project demonstrates my skills in web development, responsive design, and modern frameworks like React. It’s designed to present a clean and user-friendly interface, with a focus on demonstrating skills, experience, and personal projects.',
+        technologies: ['React', 'JavaScript', 'Node.js', 'MySQL', 'Express.js','Vs Studio Code'],
+        link: '#'
+      },
+      {
         title: 'Personal Portfolio Website',
         description: 'This is my personal portfoloio website showcasing a variety of software development projects. This site highlights my expertise in web development, responsive design, and modern frameworks like Angular. It’s designed to present a clean and user-friendly interface, with a focus on demonstrating skills, experience, and personal projects.',
         technologies: ['HTML', 'SCSS', 'TypeScript', 'Angular','Vs Studio Code'],
