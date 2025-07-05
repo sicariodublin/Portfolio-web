@@ -9,14 +9,14 @@
     showAllProjects = false; // Toggle to show or hide all projects
     projects = [
       {
-        title: 'Expence Tracker',
+        title: 'Expense Tracker',
         description: 'This is an expense tracker website that allows users to track their expenses and categorize them. Users can add expenses manually or import them from a CSV file. The website displays the expenses in a table format, with options to filter and sort the data. The project demonstrates my skills in web development, responsive design, and modern frameworks like React. It’s designed to present a clean and user-friendly interface, with a focus on demonstrating skills, experience, and personal projects.',
         technologies: ['React', 'JavaScript', 'Node.js', 'MySQL', 'Express.js','Vs Studio Code'],
         link: '#'
       },
       {
         title: 'Personal Portfolio Website',
-        description: 'This is my personal portfoloio website showcasing a variety of software development projects. This site highlights my expertise in web development, responsive design, and modern frameworks like Angular. It’s designed to present a clean and user-friendly interface, with a focus on demonstrating skills, experience, and personal projects.',
+        description: 'This is my personal portfolio website showcasing a variety of software development projects. This site highlights my expertise in web development, responsive design, and modern frameworks like Angular. It’s designed to present a clean and user-friendly interface, with a focus on demonstrating skills, experience, and personal projects.',
         technologies: ['HTML', 'SCSS', 'TypeScript', 'Angular','Vs Studio Code'],
         link: '#'
       },
@@ -28,7 +28,7 @@
       },
       {
         title: 'FS Petshop, the Petparlour',
-        description: '"FS - The Petparlour" is my very first website, developed as part of an academic project. The goal was to create a multi-page website with a consistent design using only HTML and CSS. The project required careful planning through wireframes, mood boards, and design sketches, followed by implementation across a minimum of three web pages. The website features a cohesive design with a consistent background image, logo, navbar, and footer across all pages. A single CSS stylesheet is used to ensure uniform styling, including the use of Google Fonts to enhance typography. The project demonstrates my ability to create a clean and structured layout with functional navigation, setting the foundation for my web development skills.',
+        description: '"FS - The Petparlour" is my very first website, developed as part of an academic project. The goal was to create a multi-page website with a consistent design using only HTML and CSS. The project required careful planning through wireframe, mood boards, and design sketches, followed by implementation across a minimum of three web pages. The website features a cohesive design with a consistent background image, logo, navbar, and footer across all pages. A single CSS stylesheet is used to ensure uniform styling, including the use of Google Fonts to enhance typography. The project demonstrates my ability to create a clean and structured layout with functional navigation, setting the foundation for my web development skills.',
         technologies: ['Plain HTML', 'CSS','Vs Studio Code'],
         link: '#'
       },
