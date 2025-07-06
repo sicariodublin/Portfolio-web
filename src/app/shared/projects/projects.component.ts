@@ -9,6 +9,12 @@
     showAllProjects = false; // Toggle to show or hide all projects
     projects = [
       {
+        title: 'Job Scraper',
+        description: 'This Python-based project automates the process of tracking and receiving job listings tailored to my career goals. It scrapes or simulates job data (e.g., technical support, web development roles), formats the results into a styled HTML email, and sends them daily to my inbox using Gmail’s SMTP service.',
+        technologies: ['Python', 'APIs','BeautifulSoup', 'Requests', 'Gmail'],
+        link: '#'
+      },
+      {
         title: 'Expense Tracker',
         description: 'This is an expense tracker website that allows users to track their expenses and categorize them. Users can add expenses manually or import them from a CSV file. The website displays the expenses in a table format, with options to filter and sort the data. The project demonstrates my skills in web development, responsive design, and modern frameworks like React. It’s designed to present a clean and user-friendly interface, with a focus on demonstrating skills, experience, and personal projects.',
         technologies: ['React', 'JavaScript', 'Node.js', 'MySQL', 'Express.js','Vs Studio Code'],
